@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IES Modifier</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
 </head>
-<body>
+<body onload="brython()">
     <h1>Welcome to IES Modifier</h1>
     <p>This project is about scaling length and implementing chip efficiency to standard 1m linear IES files.</p>
+
+    <h2>Python Script</h2>
+    <script type="text/python">
+        def scale_length(ies_file, scale_factor):
+            # Implement scaling logic here
+            print("Scaling length")
+
+        def implement_chip_efficiency(ies_file, efficiency):
+            # Implement chip efficiency logic here
+            print("Implementing chip efficiency")
+
+        # Example usage
+        scale_length("example.ies", 2.0)
+        implement_chip_efficiency("example.ies", 0.85)
+    </script>
 </body>
 </html>
